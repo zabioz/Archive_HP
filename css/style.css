@@ -38,13 +38,11 @@ h1 {
 }
 
 th {
-    text-decoration: none;
-    text-align: left
+    text-align: left;
 }
 
 td {
-    text-decoration: none;
-    text-align: center
+    text-align: center;
 }
 
 #work_info{
