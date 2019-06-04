@@ -37,10 +37,9 @@ h1 {
     margin-top: 50px;
     line-height: 2;
 }
-#content td {
-    
-    padding-left : 30%;
-    padding-right: ;
+#content th {
+    text-decoration: none;
+    text-align: left
 
 }
 #work_info{
