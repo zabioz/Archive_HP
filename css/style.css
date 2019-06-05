@@ -21,9 +21,15 @@
 }
 
 h1 {
+    font-size: 2.5em;
     text-align: center;
 }
 
+.title {
+    font-size: 1.7em;
+    font-weight: normal;
+    line-height: 1;
+}
 
 .language {
     text-align: right;
@@ -39,7 +45,7 @@ h1 {
 
 
 .home {
-    margin: 5%;
+    margin: 4%;
     font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
 
 }
@@ -59,7 +65,7 @@ h1 {
 }
 
 th {
-    text-align: left;
+    text-align: center;
 }
 
 td {
@@ -69,6 +75,14 @@ td {
 .picture img {
    
     max-width: 100%;
+    height: auto;
+}
+.graph{
+    padding-left: 0px;
+}
+.graph img {
+    max-width: 50%;
+    min-width: 30%;
     height: auto;
 }
 
@@ -88,6 +102,7 @@ p{
 
 ul{
     list-style:none;
+    padding-left: 0.5%;
  }
 
 .point_li {
