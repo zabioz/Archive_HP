@@ -1,5 +1,179 @@
 @charset "UTF-8";
 
+.color{
+    color:
+     #5472CC
+    #5B6480
+    #698EFF
+    #344780  
+     #B5C8FF;
+}
+
+.chart {
+    width: 50%;
+    height: 50%;
+    padding-left: 0px;
+    float: left;
+}
+
+    
+.top_banner {
+    display: flex;
+    flex-direction: column;
+    border-top: 0;
+    max-height: 75%;
+    height: 70%;
+    width: 100%;
+    position: relative;
+    /*이미지 추가*/
+}
+#banner{
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.2),rgba(255,255,255,0.2)), url("../img/back2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+    /*이미지 추가*/
+html{
+    height: 100%;
+    
+}
+
+body{
+    margin:0;
+    height: 100%;
+}
+
+.picture img {
+   
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-shadow: 0 0 3px #FFF;
+
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h1 #logo {
+    vertical-align: -10px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.language {
+    margin-right: 1%;
+    text-shadow: 0 0 4px #344780;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.language a:link, a:visited, a:active {
+    color:rgb(224, 231, 255);
+    text-decoration: none;
+}
+.language a:hover{
+    text-decoration: underline;
+}
+
+
+.home {
+    margin: 1%;
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+
+}
+
+.home h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    text-align: left;
+    border-left:10px solid #698EFF;
+}
+
+#content {
+    margin-top: 50px;
+    line-height: 2;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+td {
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#work_info{
+    line-height: 2;
+}
+#work_info li {
+    font-weight : bold;
+    margin-top : 15px;
+    margin-bottom : 15px;
+
+}
+p{
+    margin-left: 1%;
+    color :rgb(224, 231, 255);
+    font-size: 0.8em;
+    line-height: 0.3;
+    text-shadow: 0 0 4px rgb(0, 0, 0);
+}
+
+ul{
+    list-style:none;
+ }
+
+.point_li {
+    line-height: 2;
+    list-style-type: disc;
+}
+
+#skil_li{
+    line-height: 2;
+}
+
+#chart_div{
+    padding-left: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+/*
+.graph{
+    padding-left: 0px;
+}
+.graph img {
+    max-width: 50%;
+    min-width: 30%;
+    height: auto;
+}
+*/
+.little {
+    font-size: 0.8em;
+}
+footer {
+    margin-top: 40px;
+    font-size: 0.8em;
+    text-align: center;
+    color:rgb(224, 231, 255);
+    background-color: #698EFF;
+}
+footer ul li {
+    display: inline;
+}
+
+
 /* 배경 
 .conA {
     display: flex;
@@ -15,8 +189,8 @@
     text-align: center;
 }
 */
-
-#logo { 
+/* 
+h1 #logo { 
     vertical-align: -10px;
 }
 

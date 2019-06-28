@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
+
     <title>Archive-Asia</title>
 </head>
+
+<div class= "top_banner" img id="banner" src="img/back2.jpeg" alt="">    
+
 <header>
     <div class = "language">
         <a href = index.html>日本語</a>
@@ -21,6 +27,7 @@
 <p>도쿄도 키타구 아카바네 3-22-6-102</p>
 <p>tel:03-5939-4070</p>
 <p>info@archive-asia.co.jp</p>
+</div>
 </header>
 
 
@@ -119,10 +126,73 @@
     </div>
 
         <h3>현재 당사에 소속 된 엔지니어의 기술 분야 / 국적</h3>
-        <div class = "graph">
-                <img src="img/7.png" alt=""><img src = "img/8.png" alt="">
+        <div class="chart">
+                <canvas id="myPieChart"></canvas>
+                    </div>
+                <script> var ctx = document.getElementById("myPieChart").getContext("2d");   
+                    ctx.canvas.height = 100;
+                    var myPieChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                    labels: ["PM", "PG", "SE"],
+                    datasets: [{
+                        label: 'Group',
+                        data: [46.7, 20.0, 33.3],
+                        backgroundColor: [
+                        '#E87B76',
+                        '#F2A999',
+                        '#DB9A7A'
+                    ]
+                    }],
+                    },
+                    options: {
+                        "responsive": true,
+                        "maintainAspectRatio": false,
+                        scales: {
+                                display: false
+                            },
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero:true
+                        }
+                    }]
+                }
+            });
                 
-        </div>
+                </script>
+                <div class="chart">
+                        <canvas id="myPieChart2"></canvas>
+                    </div>
+                        <script> var ctx = document.getElementById("myPieChart2").getContext("2d");   
+                        ctx.canvas.height = 100;
+                        var myPieChart2 = new Chart(ctx, {
+                        type: 'pie',
+                        data: {
+                        labels: ["일본", "한국", "중국"],
+                        datasets: [{
+                            label: 'Group',
+                            data: [33.3, 58.3, 8.3],
+                            backgroundColor: [
+                        '#5F7DE8',
+                        '#61A5ED',
+                        '#65BEDB'
+                            ]
+                        }],
+                        },
+                        options: {
+                            "responsive": true,
+                            "maintainAspectRatio": false,
+                        },
+                            scales: {
+                                display: false
+                            },
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero:true
+                            }
+                        }]
+                    });
+                </script>
         <h3>보유 기술 (언어)</h3>
         <div id ="skil_li">
         <ul>
